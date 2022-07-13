@@ -1,135 +1,53 @@
 if game.Players.L709123alt_account
-     game.StarterGui:SetCore("SendNotification", {
-Title = "Hello, l709123alt_account!";
-Text = "Made By tott327 and Testerextra"; 
-Icon = "rbxassetid://10119479772";
-Duration = 2;
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+game.StarterGui:SetCore("SendNotification", {
+Title = "rake kill test hacks"; -- the title
+Text = "Made By tott327 and Testerextra";
+Icon = "rbxassetid://10119479772"; -- the image if u want. 
+Duration = 2; -- how long the notification should in secounds
 })
+wait(0)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("rake kill test", "BloodTheme")
-local Main = Window:NewTab("Rake")
+local Main = Window:NewTab("Main")
 local Main = Main:NewSection("Cheats")
-  
-Main:NewToggle("AutoFreeze", "It freezes rake", function(state)
-    if state then
-        loadstring(game:HttpGet("https://pastebin.com/raw/WMMW6kUJ"))()
+  Main:NewButton("Bypass Anti Cheat", "", function()
+   for _, scr in pairs(workspace:GetDescendants()) do
+	if scr.ClassName ~= "LocalScript" or scr.Name ~= "MainLoader" then
+		continue
+	end
+	scr:Destroy()
+end
+wait(1)
+for _, scr in pairs(workspace:GetDescendants()) do
+	if scr.ClassName ~= "Script" or scr.Name ~= "ANTIEXPLOIT" then
+		continue
+	end
+	scr:Destroy()
+end
+wait(1)
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
+game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript:Destroy()
 wait(0.01)
-loadstring(game:HttpGet("https://pastebin.com/raw/5Zt3MsZm"))()
-    else
-        _G.Toggle = false
-
-while _G.Toggle do
-wait(10)
-local args = {
-    [1] = workspace.Rake.HumanoidRootPart,
-    [2] = workspace.Rake.Humanoid,
-    [3] = 10,
-    [4] = "AAKKAKKAAKKA112121",
-    [5] = "ALALALAQAQAQ1+!'SA",
-    [6] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").SnowballRE.DamageRE:FireServer(unpack(args))
-
-end
-    end
+game.StarterGui:SetCore("SendNotification", {
+Title = "Anti Cheat"; -- the title
+Text = "Bypassed!"; 
+Icon = "rbxassetid://10119479772"; -- the image if u want. 
+Duration = 2; -- how long the notification should in secounds
+})
 end)
-Main:NewToggle("God Rake", "", function(state)
-    if state then
-        _G.Toggle = true
-
-while _G.Toggle do
-wait(0.01)
-local args = {
-    [1] = workspace.Rake.LeftClaw,
-    [2] = workspace.Rake.Humanoid,
-    [3] = -10000,
-    [4] = "AAKKAKKAAKKA112121",
-    [5] = "ALALALAQAQAQ1+!'SA",
-    [6] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
-
-end
-    else
-        _G.Toggle = false
-
-while _G.Toggle do
-wait(0.01)
-local args = {
-    [1] = workspace.Rake.LeftClaw,
-    [2] = workspace.Rake.Humanoid,
-    [3] = -10000,
-    [4] = "AAKKAKKAAKKA112121",
-    [5] = "ALALALAQAQAQ1+!'SA",
-    [6] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
-
-end
-    end
+Main:NewButton("Give Players Item", "", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/K82SjrFj"))()
+   wait(3)
+   loadstring(game:HttpGet("https://pastebin.com/raw/x0TNeiu5"))()
 end)
-Main:NewToggle("Stun Rake", "", function(state)
-    if state then
-        _G.Toggle = true
 
-while _G.Toggle do
-wait(0.1)
-local args = {
-    [1] = workspace.Rake.Humanoid,
-    [2] = workspace.Rake.AI.StunTime,
-    [3] = workspace.Rake.AI.Stuns,
-    [4] = 0,
-    [5] = "AAKKAKKAAKKA112121",
-    [6] = "ALALALAQAQAQ1+!'SA",
-    [7] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Humanoid,
-    [2] = workspace.Rake.AI.StunTime,
-    [3] = workspace.Rake.AI.Stuns,
-    [4] = 0,
-    [5] = "AAKKAKKAAKKA112121",
-    [6] = "ALALALAQAQAQ1+!'SA",
-    [7] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
-end
-    else
-        _G.Toggle = false
-
-while _G.Toggle do
-wait(0.1)
-local args = {
-    [1] = workspace.Rake.Humanoid,
-    [2] = workspace.Rake.AI.StunTime,
-    [3] = workspace.Rake.AI.Stuns,
-    [4] = 0,
-    [5] = "AAKKAKKAAKKA112121",
-    [6] = "ALALALAQAQAQ1+!'SA",
-    [7] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Humanoid,
-    [2] = workspace.Rake.AI.StunTime,
-    [3] = workspace.Rake.AI.Stuns,
-    [4] = 0,
-    [5] = "AAKKAKKAAKKA112121",
-    [6] = "ALALALAQAQAQ1+!'SA",
-    [7] = "TESTMQMQOQZP11A"
-}
-
-game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
-end
-    end
-end)
 Main:NewButton("Spam Boom", "", function()
     local args = {
     [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Boom")
@@ -158,129 +76,20 @@ Main:NewButton("Give rake free headless", "", function()
 
 game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
 wait(0.01)
-loadstring(game:HttpGet("https://pastebin.com/raw/NArfepzf"))()
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-local args = {
-    [1] = workspace.Rake.Head,
-    [2] = workspace.Rake.Humanoid
-}
-
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head Hunter").HitRE:FireServer(unpack(args))
-
+    loadstring(game:HttpGet("https://pastebin.com/raw/NArfepzf"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/yps2HcAj"))()
 end)
 Main:NewButton("Dupe starter tools", "", function()
    game:GetService("ReplicatedStorage").loadscripts:FireServer()
 end)
-Main:NewButton("Delete 4 Startertools", "", function()
+Main:NewButton("Delete 4 useless tools", "", function()
    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
    if v.Name == "Bear Trap" or v.Name == "Rake Status" or v.Name == "Compass" or v.Name == "Ultra Violet Lamp" then
        v:Destroy()
    end
 end
 end)
-Main:NewButton("Give Players Item", "", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/9cxvBtQL"))()
-   wait(3)
-   loadstring(game:HttpGet("https://pastebin.com/raw/x0TNeiu5"))()
-end)
-Main:NewButton("Infinite Yield", "", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-end)
+
 
 Main:NewLabel("Rake")
 Main:NewButton("Admin", "", function()
@@ -305,7 +114,21 @@ game:GetService("ReplicatedStorage").SnowballRE.DamageRE:FireServer(unpack(args)
 end)
 Player.Chatted:connect(function(cht)
     if cht:match(".god rake") then
+_G.Toggle = true
 
+while _G.Toggle do
+wait(0.1)
+local args = {
+    [1] = workspace.Rake.LeftClaw,
+    [2] = workspace.Rake.Humanoid,
+    [3] = -10000,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
+end
 
     end 
 end)
@@ -500,7 +323,126 @@ local args = {
 
 game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
 end)
+Main:NewToggle("AutoFreeze", "It freezes rake", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/WMMW6kUJ"))()
+wait(0.01)
+loadstring(game:HttpGet("https://pastebin.com/raw/5Zt3MsZm"))()
+    else
+        _G.Toggle = false
 
+while _G.Toggle do
+wait(10)
+local args = {
+    [1] = workspace.Rake.HumanoidRootPart,
+    [2] = workspace.Rake.Humanoid,
+    [3] = 10,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").SnowballRE.DamageRE:FireServer(unpack(args))
+
+end
+    end
+end)
+Main:NewToggle("God Rake", "", function(state)
+    if state then
+        _G.Toggle = true
+
+while _G.Toggle do
+wait(0.01)
+local args = {
+    [1] = workspace.Rake.LeftClaw,
+    [2] = workspace.Rake.Humanoid,
+    [3] = -10000,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
+
+end
+    else
+        _G.Toggle = false
+
+while _G.Toggle do
+wait(0.01)
+local args = {
+    [1] = workspace.Rake.LeftClaw,
+    [2] = workspace.Rake.Humanoid,
+    [3] = -10000,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
+
+end
+    end
+end)
+Main:NewToggle("Stun Rake", "", function(state)
+    if state then
+        _G.Toggle = true
+
+while _G.Toggle do
+wait(0.1)
+local args = {
+    [1] = workspace.Rake.Humanoid,
+    [2] = workspace.Rake.AI.StunTime,
+    [3] = workspace.Rake.AI.Stuns,
+    [4] = 0,
+    [5] = "AAKKAKKAAKKA112121",
+    [6] = "ALALALAQAQAQ1+!'SA",
+    [7] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
+local args = {
+    [1] = workspace.Rake.Humanoid,
+    [2] = workspace.Rake.AI.StunTime,
+    [3] = workspace.Rake.AI.Stuns,
+    [4] = 0,
+    [5] = "AAKKAKKAAKKA112121",
+    [6] = "ALALALAQAQAQ1+!'SA",
+    [7] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
+end
+    else
+        _G.Toggle = false
+
+while _G.Toggle do
+wait(0.1)
+local args = {
+    [1] = workspace.Rake.Humanoid,
+    [2] = workspace.Rake.AI.StunTime,
+    [3] = workspace.Rake.AI.Stuns,
+    [4] = 0,
+    [5] = "AAKKAKKAAKKA112121",
+    [6] = "ALALALAQAQAQ1+!'SA",
+    [7] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
+local args = {
+    [1] = workspace.Rake.Humanoid,
+    [2] = workspace.Rake.AI.StunTime,
+    [3] = workspace.Rake.AI.Stuns,
+    [4] = 0,
+    [5] = "AAKKAKKAAKKA112121",
+    [6] = "ALALALAQAQAQ1+!'SA",
+    [7] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").RocketRE.StunRE:FireServer(unpack(args))
+end
+    end
+end)
 
 
 
@@ -757,23 +699,26 @@ end)
 
 local Teleport = Window:NewTab("Teleport")
 local Teleport = Teleport:NewSection("Teleport")
-Teleport:NewButton("Bridge Tower", "", function()
+Teleport:NewButton("Two Connected Towers", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(418.509, 85.194, -463.831)
 end)
 Teleport:NewButton("Wood Tower", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(436.087, 34.805, -131.402)
 end)
-Teleport:NewButton("Tall Tower", "", function()
+Teleport:NewButton("Building", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5.266, 69.956, -581.31)
 end)
-Teleport:NewButton("House", "", function()
+Teleport:NewButton("Cabin", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(548.05, 5.755, -249.693)
 end)
-Teleport:NewButton("Abandon", "", function()
+Teleport:NewButton("Hangar", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(388.553, 8.041, 146.966)
 end)
 Teleport:NewButton("Rake's Hole", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(252.298, 13.493, -232.59)
+end)
+Teleport:NewButton("Flowey", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(160.399, -16.778, 121.1)
 end)
 Teleport:NewButton("Water1", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(382.159, 3.638, -393.254)
