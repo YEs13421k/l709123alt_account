@@ -1,24 +1,15 @@
 if game.Players.l709123alt_account
-then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-wait(0.01)
-game.StarterGui:SetCore("SendNotification", {
-Title = "rake kill test hacks"; -- the title
-Text = "Made By tott327"; 
-Icon = "rbxassetid://10119479772"; -- the image if u want. 
-Duration = 2; -- how long the notification should in secounds
+     game.StarterGui:SetCore("SendNotification", {
+Title = "Hello, l709123alt_account!";
+Text = "Made By tott327 and Testerextra"; 
+Icon = "rbxassetid://10119479772";
+Duration = 2;
 })
-wait(3)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("rake kill test", "BloodTheme")
 local Main = Window:NewTab("Rake")
 local Main = Main:NewSection("Cheats")
   
-Main:NewButton("Give Players Itemm -rejoin to remove", "", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/3XExaSza"))()
-   wait(3)
-   loadstring(game:HttpGet("https://pastebin.com/raw/x0TNeiu5"))()
-end)
 Main:NewToggle("AutoFreeze", "It freezes rake", function(state)
     if state then
         loadstring(game:HttpGet("https://pastebin.com/raw/WMMW6kUJ"))()
@@ -275,14 +266,21 @@ end)
 Main:NewButton("Dupe starter tools", "", function()
    game:GetService("ReplicatedStorage").loadscripts:FireServer()
 end)
-Main:NewButton("Delete 4 useless tools", "", function()
+Main:NewButton("Delete 4 Startertools", "", function()
    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
    if v.Name == "Bear Trap" or v.Name == "Rake Status" or v.Name == "Compass" or v.Name == "Ultra Violet Lamp" then
        v:Destroy()
    end
 end
 end)
-
+Main:NewButton("Give Players Item", "", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/9cxvBtQL"))()
+   wait(3)
+   loadstring(game:HttpGet("https://pastebin.com/raw/x0TNeiu5"))()
+end)
+Main:NewButton("Infinite Yield", "", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
 
 Main:NewLabel("Rake")
 Main:NewButton("Admin", "", function()
