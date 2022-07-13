@@ -1,4 +1,4 @@
-if game.Players.l709123alt_account
+if game.Players.L709123alt_account
      game.StarterGui:SetCore("SendNotification", {
 Title = "Hello, l709123alt_account!";
 Text = "Made By tott327 and Testerextra"; 
